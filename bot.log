@@ -1,0 +1,810 @@
+2025-08-10 20:59:26,008 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 20:59:26,008 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 20:59:26,013 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 20:59:26,013 - __main__ - INFO - Запуск бота...
+2025-08-10 20:59:26,084 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 20:59:26,085 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 20:59:26,085 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 20:59:26,085 - src.scheduler - INFO - Планировщик настроен с интервалом 40 минут для авто-сигналов
+2025-08-10 20:59:26,085 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 20:59:26,086 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 20:59:26,086 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 20:59:26,086 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 20:59:26,086 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 20:59:26,086 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 20:59:26,086 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 20:59:26,245 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 20:59:26,280 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 20:59:26,282 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 20:59:26,282 - telegram.ext.Application - INFO - Application started
+2025-08-10 20:59:36,395 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 20:59:44,270 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 20:59:44,274 - src.bot - INFO - Команда /start от пользователя 578529330
+2025-08-10 20:59:44,278 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 20:59:44,852 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 20:59:53,073 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 20:59:53,081 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '✅ Я зарегистрировался'
+2025-08-10 20:59:53,250 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 20:59:55,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 20:59:55,112 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '📋 Перейти в главное меню'
+2025-08-10 20:59:55,259 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 20:59:58,423 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 20:59:58,425 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-10 20:59:58,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 20:59:58,558 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendChatAction "HTTP/1.1 200 OK"
+2025-08-10 21:00:00,626 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:00,678 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendChatAction "HTTP/1.1 200 OK"
+2025-08-10 21:00:02,776 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:02,859 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendChatAction "HTTP/1.1 200 OK"
+2025-08-10 21:00:04,959 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:05,079 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendChatAction "HTTP/1.1 200 OK"
+2025-08-10 21:00:08,537 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:00:11,092 - src.signal_generator - INFO - Сгенерирован новый сигнал для пользователя 578529330. Следующее обновление: 2025-08-10 18:12:11.084244
+2025-08-10 21:00:11,311 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:11,425 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:11,533 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:11,643 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:11,733 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:18,263 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:00:18,266 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🔔 Авто-сигналы'
+2025-08-10 21:00:18,428 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:20,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:00:20,626 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-10 21:00:20,695 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:22,642 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:00:22,644 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '👥 Сообщество'
+2025-08-10 21:00:22,724 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:25,389 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:00:25,390 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🛟 Помощь'
+2025-08-10 21:00:25,452 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:33,900 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:00:33,907 - src.bot - INFO - Команда /help от пользователя 578529330
+2025-08-10 21:00:34,099 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:38,328 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:00:38,336 - src.bot - INFO - Команда /help от пользователя 578529330
+2025-08-10 21:00:38,556 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:00:48,474 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:00:55,125 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:00:55,168 - src.bot - INFO - Команда /menu от пользователя 578529330
+2025-08-10 21:00:55,170 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:00:55,326 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:01:05,272 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:01:15,312 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:01:25,442 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:01:35,578 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:01:45,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:01:52,169 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:01:52,172 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 21:01:52,174 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 21:01:52,185 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 21:01:52,186 - __main__ - INFO - Завершение работы бота
+2025-08-10 21:02:00,922 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 21:02:00,922 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 21:02:00,925 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 21:02:00,925 - __main__ - INFO - Запуск бота...
+2025-08-10 21:02:00,984 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:02:00,984 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:02:00,985 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:02:00,985 - src.scheduler - INFO - Планировщик настроен с интервалом 70 минут для авто-сигналов
+2025-08-10 21:02:00,985 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 21:02:00,985 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 21:02:00,985 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 21:02:00,985 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 21:02:00,986 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:02:00,986 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 21:02:00,986 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 21:02:01,118 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 21:02:01,159 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 21:02:01,160 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:02:01,160 - telegram.ext.Application - INFO - Application started
+2025-08-10 21:02:10,131 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:02:10,134 - src.bot - INFO - Команда /start от пользователя 578529330
+2025-08-10 21:02:10,137 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:02:10,306 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:02:20,177 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:02:29,271 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:02:29,280 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '✅ Я зарегистрировался'
+2025-08-10 21:02:29,449 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:02:32,265 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:02:32,267 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '📋 Перейти в главное меню'
+2025-08-10 21:02:32,341 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:02:42,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:02:52,379 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:03:02,519 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:03:12,563 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:03:22,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:03:32,732 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:03:42,777 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:03:52,898 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:04:03,036 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:04:13,078 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:04:23,116 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:04:28,909 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:04:28,912 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🔔 Авто-сигналы'
+2025-08-10 21:04:29,182 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:04:38,967 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:04:49,006 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:04:59,050 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:05:04,782 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:05:04,783 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 21:05:04,783 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 21:05:04,794 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 21:05:04,796 - __main__ - INFO - Завершение работы бота
+2025-08-10 21:17:21,521 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 21:17:21,521 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 21:17:21,527 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 21:17:21,528 - __main__ - INFO - Запуск бота...
+2025-08-10 21:17:21,599 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:17:21,599 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:17:21,599 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:17:21,600 - src.scheduler - INFO - Планировщик настроен с интервалом 53 минут для авто-сигналов
+2025-08-10 21:17:21,600 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 21:17:21,600 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 21:17:21,600 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 21:17:21,600 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 21:17:21,600 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:17:21,601 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 21:17:21,601 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 21:17:22,094 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 21:17:22,135 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 21:17:22,136 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:17:22,137 - telegram.ext.Application - INFO - Application started
+2025-08-10 21:17:22,256 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:17:22,258 - src.bot - INFO - Команда /menu от пользователя 578529330
+2025-08-10 21:17:22,260 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:17:22,343 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:17:30,199 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:17:30,210 - src.bot - INFO - Команда /menu от пользователя 578529330
+2025-08-10 21:17:30,212 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:17:30,388 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:17:36,981 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:17:36,987 - src.bot - INFO - Команда /start от пользователя 578529330
+2025-08-10 21:17:36,989 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:17:37,159 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:17:47,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:17:49,946 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:17:50,114 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-10 21:17:50,116 - src.bot - INFO - Callback query от пользователя 578529330: casino_done
+2025-08-10 21:17:50,196 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:17:50,298 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:18:00,000 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:06,195 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:06,201 - src.bot - INFO - Команда /menu от пользователя 578529330
+2025-08-10 21:18:06,206 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:18:06,380 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:18:10,926 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:10,993 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-10 21:18:10,994 - src.bot - INFO - Callback query от пользователя 578529330: go_to_bot
+2025-08-10 21:18:11,048 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:18:11,136 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:18:21,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:23,084 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:23,119 - src.bot - INFO - Команда /menu от пользователя 578529330
+2025-08-10 21:18:23,121 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:18:23,288 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:18:33,228 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:43,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:43,835 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:43,838 - src.bot - INFO - Команда /help от пользователя 578529330
+2025-08-10 21:18:44,125 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:18:46,450 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:46,452 - src.bot - INFO - Команда /help от пользователя 578529330
+2025-08-10 21:18:46,536 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:18:47,931 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:47,933 - src.bot - INFO - Команда /community от пользователя 578529330
+2025-08-10 21:18:48,019 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:18:51,371 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:18:51,374 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '👥 Сообщество'
+2025-08-10 21:18:51,459 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:19:01,429 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:19:06,755 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:19:06,768 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🛟 Помощь'
+2025-08-10 21:19:06,929 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:19:16,937 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:19:22,095 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:19:22,104 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🛟 Помощь'
+2025-08-10 21:19:22,262 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:19:27,634 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:19:27,646 - src.bot - INFO - Команда /help от пользователя 578529330
+2025-08-10 21:19:27,795 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:19:37,720 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:19:47,857 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:19:56,661 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:19:56,675 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '👥 Сообщество'
+2025-08-10 21:19:56,853 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:20:06,800 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:20:16,944 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:20:26,992 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:20:37,111 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:20:44,484 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:20:44,498 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🛟 Помощь'
+2025-08-10 21:20:44,773 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:20:54,575 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:21:04,632 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:21:14,678 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:21:24,729 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:21:34,865 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:21:45,005 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:21:55,142 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:22:05,197 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:22:14,875 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:22:14,877 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 21:22:14,877 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 21:22:14,888 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 21:22:14,890 - __main__ - INFO - Завершение работы бота
+2025-08-10 21:23:01,656 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 21:23:01,657 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 21:23:01,659 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 21:23:01,659 - __main__ - INFO - Запуск бота...
+2025-08-10 21:23:01,726 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:23:01,726 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:23:01,726 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:23:01,726 - src.scheduler - INFO - Планировщик настроен с интервалом 66 минут для авто-сигналов
+2025-08-10 21:23:01,726 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 21:23:01,727 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 21:23:01,727 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 21:23:01,727 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 21:23:01,727 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:23:01,727 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 21:23:01,727 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 21:23:01,842 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 21:23:01,880 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 21:23:01,881 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:23:01,882 - telegram.ext.Application - INFO - Application started
+2025-08-10 21:23:01,999 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:23:02,001 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '👥 Сообщество'
+2025-08-10 21:23:02,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:23:04,146 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:23:04,148 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🛟 Помощь'
+2025-08-10 21:23:04,250 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:23:06,430 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:23:06,433 - src.bot - INFO - Команда /help от пользователя 578529330
+2025-08-10 21:23:06,528 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:23:12,339 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:23:12,342 - src.bot - INFO - Команда /community от пользователя 578529330
+2025-08-10 21:23:12,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:23:19,968 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:23:19,970 - src.bot - INFO - Команда /menu от пользователя 578529330
+2025-08-10 21:23:19,980 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:23:20,133 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:23:30,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:23:40,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:23:50,139 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:24:00,259 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:24:10,309 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:24:20,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:24:30,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:24:40,731 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:24:50,786 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:25:00,853 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:25:10,900 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:25:20,956 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:25:31,000 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:25:41,051 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:25:51,169 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:26:01,217 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:26:08,249 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:26:08,257 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '👥 Сообщество'
+2025-08-10 21:26:08,435 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:26:18,310 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:26:28,434 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:26:38,582 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:26:48,720 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:26:58,857 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:27:08,902 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:27:18,950 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:27:28,992 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:27:35,799 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:27:35,800 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 21:27:35,801 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 21:27:35,812 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 21:27:35,814 - __main__ - INFO - Завершение работы бота
+2025-08-10 21:27:38,821 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 21:27:38,821 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 21:27:38,822 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 21:27:38,822 - __main__ - INFO - Запуск бота...
+2025-08-10 21:27:38,883 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:27:38,883 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:27:38,883 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:27:38,883 - src.scheduler - INFO - Планировщик настроен с интервалом 49 минут для авто-сигналов
+2025-08-10 21:27:38,883 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 21:27:38,884 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 21:27:38,884 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 21:27:38,884 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 21:27:38,884 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:27:38,884 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 21:27:38,884 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 21:27:39,038 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 21:27:39,081 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 21:27:39,082 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:27:39,083 - telegram.ext.Application - INFO - Application started
+2025-08-10 21:27:41,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:27:41,631 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '👥 Сообщество'
+2025-08-10 21:27:41,705 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:27:48,230 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:27:48,235 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '👥 Сообщество'
+2025-08-10 21:27:48,408 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:27:58,290 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:28:08,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:28:18,525 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:28:28,567 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:28:33,211 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:28:33,223 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🛟 Помощь'
+2025-08-10 21:28:33,399 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:28:43,307 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:28:53,444 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:29:03,584 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:29:13,631 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:29:23,679 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:29:33,787 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:29:43,890 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:29:53,939 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:30:03,984 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:30:14,027 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:30:24,073 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:30:34,120 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:30:44,181 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:30:54,224 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:31:04,271 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:31:14,341 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:31:24,388 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:31:34,442 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:31:44,512 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:31:54,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:32:04,651 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:32:14,700 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:32:24,800 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:32:34,936 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:32:44,982 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:32:55,118 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:33:05,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:33:15,212 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:33:25,290 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:33:35,336 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:33:45,380 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:33:55,731 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:34:05,781 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:34:15,898 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:34:26,039 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:34:36,090 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:34:46,212 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:34:56,347 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:35:06,476 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:35:16,526 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:35:26,574 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:35:36,622 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:35:46,670 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:35:56,719 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:36:06,800 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:36:16,848 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:36:26,895 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:36:36,950 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:36:46,998 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:36:57,047 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:37:07,093 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:37:17,142 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:37:27,193 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:37:37,322 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:37:47,380 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:37:57,491 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:38:07,634 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:38:17,681 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:38:27,725 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:38:37,774 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:38:47,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:38:57,861 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:39:07,924 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:39:17,974 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:39:28,120 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:39:38,189 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:39:48,245 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:39:58,297 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:40:08,358 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:40:18,496 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:40:28,637 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:40:38,683 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:40:48,807 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:40:58,852 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:41:08,898 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:41:18,957 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:41:29,002 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:41:39,048 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:41:49,100 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:41:59,151 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:42:09,201 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:42:19,252 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:42:29,301 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:42:39,401 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:42:49,451 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:42:59,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:43:09,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:43:19,666 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:43:29,718 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:43:39,773 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:43:49,840 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:43:59,978 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:44:10,059 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:44:20,234 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:44:30,281 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:44:40,336 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:44:50,404 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:45:00,455 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:45:10,507 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:45:20,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:45:30,603 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:45:40,736 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:45:50,784 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:46:00,832 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:46:10,973 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:46:10,976 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 21:46:10,977 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 21:46:10,988 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 21:46:10,990 - __main__ - INFO - Завершение работы бота
+2025-08-10 21:46:20,053 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 21:46:20,053 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 21:46:20,059 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 21:46:20,059 - __main__ - INFO - Запуск бота...
+2025-08-10 21:46:20,124 - src.bot - WARNING - Файл изображения не найден: bonus.png
+2025-08-10 21:46:20,124 - src.bot - WARNING - Файл изображения не найден: welcome.png
+2025-08-10 21:46:20,128 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:46:20,129 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:46:20,129 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:46:20,129 - src.scheduler - INFO - Планировщик настроен с интервалом 47 минут для авто-сигналов
+2025-08-10 21:46:20,129 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 21:46:20,129 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 21:46:20,129 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 21:46:20,130 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 21:46:20,130 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:46:20,130 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 21:46:20,130 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 21:46:20,280 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 21:46:20,324 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 21:46:20,326 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:46:20,326 - telegram.ext.Application - INFO - Application started
+2025-08-10 21:46:30,540 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:46:30,541 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 21:46:30,542 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 21:46:30,553 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 21:46:30,554 - __main__ - INFO - Завершение работы бота
+2025-08-10 21:46:42,850 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 21:46:42,850 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 21:46:42,855 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 21:46:42,855 - __main__ - INFO - Запуск бота...
+2025-08-10 21:46:42,932 - src.bot - WARNING - Файл изображения не найден: bonus.png
+2025-08-10 21:46:42,933 - src.bot - WARNING - Файл изображения не найден: welcome.png
+2025-08-10 21:46:42,935 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:46:42,936 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:46:42,936 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:46:42,936 - src.scheduler - INFO - Планировщик настроен с интервалом 79 минут для авто-сигналов
+2025-08-10 21:46:42,936 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 21:46:42,937 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 21:46:42,937 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 21:46:42,937 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 21:46:42,937 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:46:42,937 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 21:46:42,937 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 21:46:43,065 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 21:46:43,101 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 21:46:43,103 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:46:43,103 - telegram.ext.Application - INFO - Application started
+2025-08-10 21:46:49,378 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:46:49,383 - src.bot - INFO - Команда /start от пользователя 578529330
+2025-08-10 21:46:49,387 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:46:50,194 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 21:46:57,178 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:46:57,404 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-10 21:46:57,406 - src.bot - INFO - Callback query от пользователя 578529330: casino_done
+2025-08-10 21:46:57,533 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:46:58,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 21:47:07,266 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:47:12,705 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:47:12,893 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-10 21:47:12,895 - src.bot - INFO - Callback query от пользователя 578529330: go_to_bot
+2025-08-10 21:47:12,996 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:13,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 21:47:22,832 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:47:32,966 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:47:37,331 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:47:37,340 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-10 21:47:37,505 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:37,563 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendChatAction "HTTP/1.1 200 OK"
+2025-08-10 21:47:39,700 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:39,789 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendChatAction "HTTP/1.1 200 OK"
+2025-08-10 21:47:41,855 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:41,915 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendChatAction "HTTP/1.1 200 OK"
+2025-08-10 21:47:43,988 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:44,040 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendChatAction "HTTP/1.1 200 OK"
+2025-08-10 21:47:47,399 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:47:48,048 - src.signal_generator - INFO - Сгенерирован новый сигнал для пользователя 578529330. Следующее обновление: 2025-08-10 19:12:48.041484
+2025-08-10 21:47:48,127 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:48,180 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:48,226 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:48,272 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:48,319 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:51,531 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:47:51,537 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🔔 Авто-сигналы'
+2025-08-10 21:47:51,605 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:47:53,320 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:47:53,322 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '👥 Сообщество'
+2025-08-10 21:47:53,466 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 21:48:03,367 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:48:13,424 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:48:23,476 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:48:33,525 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:48:43,578 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:48:53,635 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:49:03,693 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:49:13,778 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:49:23,835 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:49:33,880 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:49:43,939 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:49:53,989 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:50:04,107 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:50:14,247 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:50:24,383 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:50:34,518 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:50:44,564 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:50:54,610 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:50:58,482 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:50:58,484 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 21:50:58,486 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 21:50:58,497 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 21:50:58,499 - __main__ - INFO - Завершение работы бота
+2025-08-10 21:51:12,029 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 21:51:12,030 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 21:51:12,034 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 21:51:12,034 - __main__ - INFO - Запуск бота...
+2025-08-10 21:51:12,095 - src.bot - WARNING - Файл изображения не найден: bonus.png
+2025-08-10 21:51:12,095 - src.bot - WARNING - Файл изображения не найден: welcome.png
+2025-08-10 21:51:12,098 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:51:12,098 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:51:12,098 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:51:12,098 - src.scheduler - INFO - Планировщик настроен с интервалом 58 минут для авто-сигналов
+2025-08-10 21:51:12,098 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 21:51:12,099 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 21:51:12,099 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 21:51:12,099 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 21:51:12,099 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:51:12,099 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 21:51:12,099 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 21:51:12,273 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 21:51:12,313 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 21:51:12,315 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:51:12,315 - telegram.ext.Application - INFO - Application started
+2025-08-10 21:51:18,205 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:51:18,217 - src.bot - INFO - Команда /start от пользователя 578529330
+2025-08-10 21:51:18,219 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:51:18,636 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 21:51:28,287 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:51:38,418 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:51:42,927 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:51:43,069 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-10 21:51:43,071 - src.bot - INFO - Callback query от пользователя 578529330: casino_done
+2025-08-10 21:51:43,125 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:51:43,549 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 21:51:53,067 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:52:03,202 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:52:13,342 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:52:23,479 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:52:33,615 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:52:43,687 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:52:53,734 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:53:03,785 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:53:13,832 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:53:23,878 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:53:33,922 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:53:43,974 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:53:54,099 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:54:04,145 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:54:14,189 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:54:24,310 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:54:25,021 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:54:25,190 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-10 21:54:25,191 - src.bot - INFO - Callback query от пользователя 578529330: go_to_bot
+2025-08-10 21:54:25,266 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 21:54:25,591 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 21:54:35,072 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:54:45,200 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:54:55,253 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:55:05,301 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:55:15,351 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:55:25,406 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:55:35,480 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:55:45,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:55:55,768 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:56:05,815 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:56:15,867 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:56:25,931 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:56:36,007 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:56:46,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:56:56,103 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:57:06,151 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:57:16,201 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:57:26,248 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:57:27,126 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:57:27,132 - src.bot - INFO - Команда /menu от пользователя 578529330
+2025-08-10 21:57:27,139 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:57:27,404 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 21:57:37,190 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:57:41,090 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:57:41,091 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 21:57:41,093 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 21:57:41,104 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 21:57:41,106 - __main__ - INFO - Завершение работы бота
+2025-08-10 21:57:43,226 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 21:57:43,227 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 21:57:43,228 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 21:57:43,228 - __main__ - INFO - Запуск бота...
+2025-08-10 21:57:43,290 - src.bot - WARNING - Файл изображения не найден: bonus.png
+2025-08-10 21:57:43,290 - src.bot - WARNING - Файл изображения не найден: welcome.png
+2025-08-10 21:57:43,292 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:57:43,293 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:57:43,293 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 21:57:43,293 - src.scheduler - INFO - Планировщик настроен с интервалом 44 минут для авто-сигналов
+2025-08-10 21:57:43,293 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 21:57:43,294 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 21:57:43,294 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 21:57:43,294 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 21:57:43,294 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:57:43,294 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 21:57:43,294 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 21:57:43,457 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 21:57:43,497 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 21:57:43,498 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 21:57:43,498 - telegram.ext.Application - INFO - Application started
+2025-08-10 21:57:46,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:57:46,693 - src.bot - INFO - Команда /menu от пользователя 578529330
+2025-08-10 21:57:46,699 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 21:57:47,238 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 21:57:56,785 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:58:06,921 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:58:17,023 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:58:27,069 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:58:37,196 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:58:47,244 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:58:57,290 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:59:07,396 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:59:17,445 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:59:27,514 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:59:37,567 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:59:47,699 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 21:59:57,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:00:07,859 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:00:17,920 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:00:28,136 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:00:38,248 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:00:48,296 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:00:58,346 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:01:08,394 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:01:18,440 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:01:28,485 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:01:35,700 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:01:35,702 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 22:01:35,703 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 22:01:35,714 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 22:01:35,717 - __main__ - INFO - Завершение работы бота
+2025-08-10 22:01:46,584 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 22:01:46,584 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 22:01:46,588 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 22:01:46,588 - __main__ - INFO - Запуск бота...
+2025-08-10 22:01:46,661 - src.bot - WARNING - Файл изображения не найден: bonus.png
+2025-08-10 22:01:46,661 - src.bot - WARNING - Файл изображения не найден: welcome.png
+2025-08-10 22:01:46,664 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 22:01:46,664 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 22:01:46,664 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 22:01:46,664 - src.scheduler - INFO - Планировщик настроен с интервалом 44 минут для авто-сигналов
+2025-08-10 22:01:46,664 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 22:01:46,665 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 22:01:46,665 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 22:01:46,665 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 22:01:46,665 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 22:01:46,666 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 22:01:46,666 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 22:01:46,804 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 22:01:46,844 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 22:01:46,846 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 22:01:46,846 - telegram.ext.Application - INFO - Application started
+2025-08-10 22:01:50,426 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:01:50,436 - src.bot - INFO - Команда /start от пользователя 578529330
+2025-08-10 22:01:50,440 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 22:01:50,728 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 22:02:00,493 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:02:10,543 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:02:17,880 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:02:18,041 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-10 22:02:18,043 - src.bot - INFO - Callback query от пользователя 578529330: casino_done
+2025-08-10 22:02:18,110 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 22:02:18,260 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 22:02:23,042 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:02:23,103 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-10 22:02:23,105 - src.bot - INFO - Callback query от пользователя 578529330: go_to_bot
+2025-08-10 22:02:23,166 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-10 22:02:23,432 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 22:02:33,163 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:02:43,300 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:02:53,396 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:03:03,456 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:03:13,506 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:03:23,565 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:03:33,623 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:03:37,056 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:03:37,058 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 22:03:37,060 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 22:03:37,070 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 22:03:37,072 - __main__ - INFO - Завершение работы бота
+2025-08-10 22:03:38,524 - __main__ - INFO - Проверка конфигурации...
+2025-08-10 22:03:38,524 - __main__ - INFO - Инициализация базы данных...
+2025-08-10 22:03:38,525 - src.database - INFO - База данных инициализирована успешно
+2025-08-10 22:03:38,525 - __main__ - INFO - Запуск бота...
+2025-08-10 22:03:38,582 - src.bot - WARNING - Файл изображения не найден: bonus.png
+2025-08-10 22:03:38,583 - src.bot - WARNING - Файл изображения не найден: welcome.png
+2025-08-10 22:03:38,585 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 22:03:38,585 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 22:03:38,585 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-10 22:03:38,585 - src.scheduler - INFO - Планировщик настроен с интервалом 1 минут для авто-сигналов
+2025-08-10 22:03:38,586 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-10 22:03:38,586 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-10 22:03:38,586 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-10 22:03:38,586 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-10 22:03:38,586 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 22:03:38,586 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-10 22:03:38,587 - src.bot - INFO - ✅ Бот запущен.
+2025-08-10 22:03:38,713 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-10 22:03:38,752 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-10 22:03:38,754 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-10 22:03:38,754 - telegram.ext.Application - INFO - Application started
+2025-08-10 22:03:42,212 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:03:42,225 - src.bot - INFO - Команда /menu от пользователя 578529330
+2025-08-10 22:03:42,227 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-10 22:03:42,540 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-10 22:03:44,482 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:03:44,489 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🔔 Авто-сигналы'
+2025-08-10 22:03:44,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 22:03:54,547 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:04,597 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:14,644 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:24,691 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:34,740 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:38,594 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-10 22:05:38 +03)" (scheduled at 2025-08-10 22:04:38.585535+03:00)
+2025-08-10 22:04:38,601 - src.scheduler - INFO - Отправляем авто-сигналы 1 пользователям
+2025-08-10 22:04:38,605 - src.signal_generator - INFO - Сгенерирован новый сигнал для пользователя 578529330. Следующее обновление: 2025-08-10 19:19:38.601401
+2025-08-10 22:04:38,800 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 22:04:38,802 - src.scheduler - INFO - Авто-сигнал отправлен пользователю 578529330
+2025-08-10 22:04:39,304 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-10 22:05:38 +03)" executed successfully
+2025-08-10 22:04:44,790 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:44,926 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:44,936 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-10 22:04:44,948 - src.bot - ERROR - Ошибка при генерации сигнала для пользователя 578529330: Unknown error in HTTP implementation: RuntimeError('Event loop is closed')
+2025-08-10 22:04:45,122 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 22:04:47,704 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:47,706 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-10 22:04:47,816 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 22:04:57,850 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:59,875 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:04:59,879 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-10 22:05:00,185 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-10 22:05:10,034 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:05:20,092 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:05:30,213 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:05:38,590 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-10 22:06:38 +03)" (scheduled at 2025-08-10 22:05:38.585535+03:00)
+2025-08-10 22:05:38,597 - src.scheduler - INFO - Отправляем авто-сигналы 1 пользователям
+2025-08-10 22:05:38,599 - src.signal_generator - INFO - Сигнал не генерируется для пользователя 578529330. Следующее обновление: 2025-08-10 19:19:38.601401
+2025-08-10 22:05:38,599 - src.scheduler - INFO - Сигнал не сгенерирован для пользователя 578529330
+2025-08-10 22:05:39,101 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-10 22:06:38 +03)" executed successfully
+2025-08-10 22:05:40,345 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:05:50,485 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:06:00,559 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:06:10,616 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:06:20,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:06:30,716 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:06:38,586 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-10 22:07:38 +03)" (scheduled at 2025-08-10 22:06:38.585535+03:00)
+2025-08-10 22:06:38,590 - src.scheduler - INFO - Отправляем авто-сигналы 1 пользователям
+2025-08-10 22:06:38,591 - src.signal_generator - INFO - Сигнал не генерируется для пользователя 578529330. Следующее обновление: 2025-08-10 19:19:38.601401
+2025-08-10 22:06:38,592 - src.scheduler - INFO - Сигнал не сгенерирован для пользователя 578529330
+2025-08-10 22:06:39,093 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-10 22:07:38 +03)" executed successfully
+2025-08-10 22:06:40,766 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:06:45,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-10 22:06:45,655 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-10 22:06:45,656 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-10 22:06:45,667 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-10 22:06:45,669 - __main__ - INFO - Завершение работы бота
