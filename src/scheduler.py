@@ -14,7 +14,7 @@ from typing import Optional, List
 from apscheduler.schedulers.background import BackgroundScheduler
 
 from .config import SchedulerConfig, NotificationConfig, SignalGenerationConfig
-from .database import DatabaseManager
+from .database import DatabaseManager, get_db_connection
 from .signal_generator import SignalGenerator
 from .win_messages import WinMessageTemplates
 
@@ -194,9 +194,13 @@ class AutoSignalScheduler:
                 logger.info("Нет зарегистрированных пользователей для отправки уведомлений о выигрышах")
                 return
             
-            # Выбираем случайных пользователей (10-30% от общего числа, максимум 50)
+            # Выбираем случайных пользователей (процент в пределах конфигурации, максимум по лимиту)
+            percentage = random.randint(
+                max(1, NotificationConfig.WIN_NOTIFICATION_USER_PERCENTAGE_MIN),
+                max(NotificationConfig.WIN_NOTIFICATION_USER_PERCENTAGE_MIN, NotificationConfig.WIN_NOTIFICATION_USER_PERCENTAGE_MAX)
+            )
             num_users = max(1, min(
-                len(all_users) * NotificationConfig.WIN_NOTIFICATION_USER_PERCENTAGE_MIN // 100,
+                len(all_users) * percentage // 100,
                 NotificationConfig.WIN_NOTIFICATION_MAX_USERS
             ))
             selected_users = random.sample(all_users, min(num_users, len(all_users)))
@@ -248,9 +252,13 @@ class AutoSignalScheduler:
                 logger.info("Нет пользователей с авто-сигналами для мотивационных сообщений")
                 return
             
-            # Выбираем случайных пользователей (20-50% от активных, максимум 30)
+            # Выбираем случайных пользователей (процент в пределах конфигурации, максимум по лимиту)
+            percentage = random.randint(
+                max(1, NotificationConfig.MOTIVATIONAL_USER_PERCENTAGE_MIN),
+                max(NotificationConfig.MOTIVATIONAL_USER_PERCENTAGE_MIN, NotificationConfig.MOTIVATIONAL_USER_PERCENTAGE_MAX)
+            )
             num_users = max(1, min(
-                len(auto_users) * NotificationConfig.MOTIVATIONAL_USER_PERCENTAGE_MIN // 100,
+                len(auto_users) * percentage // 100,
                 NotificationConfig.MOTIVATIONAL_MAX_USERS
             ))
             selected_users = random.sample(auto_users, min(num_users, len(auto_users)))
@@ -289,7 +297,7 @@ class AutoSignalScheduler:
             List[int]: Список ID зарегистрированных пользователей
         """
         try:
-            with DatabaseManager.get_db_connection() as conn:
+            with get_db_connection() as conn:
                 cursor = conn.cursor()
                 cursor.execute("SELECT user_id FROM users WHERE registered = 1")
                 return [row[0] for row in cursor.fetchall()]

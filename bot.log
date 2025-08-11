@@ -808,3 +808,241 @@
 2025-08-10 22:06:45,656 - apscheduler.scheduler - INFO - Scheduler has been shut down
 2025-08-10 22:06:45,667 - telegram.ext.Application - INFO - Application.stop() complete
 2025-08-10 22:06:45,669 - __main__ - INFO - Завершение работы бота
+2025-08-11 21:32:27,261 - __main__ - INFO - Проверка конфигурации...
+2025-08-11 21:32:27,261 - __main__ - INFO - Инициализация базы данных...
+2025-08-11 21:32:27,273 - src.database - INFO - База данных инициализирована успешно
+2025-08-11 21:32:27,273 - __main__ - INFO - Запуск бота...
+2025-08-11 21:32:28,262 - src.bot - WARNING - Файл изображения не найден: bonus.png
+2025-08-11 21:32:28,262 - src.bot - WARNING - Файл изображения не найден: welcome.png
+2025-08-11 21:32:28,267 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-11 21:32:28,267 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-11 21:32:28,268 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-11 21:32:28,268 - src.scheduler - INFO - Планировщик настроен с интервалом 66 минут для авто-сигналов
+2025-08-11 21:32:28,268 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-11 21:32:28,270 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-11 21:32:28,270 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-11 21:32:28,270 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-11 21:32:28,271 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-11 21:32:28,272 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-11 21:32:28,272 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[1:06:00], next run at: 2025-08-11 22:38:28 MSK)" (scheduled at 2025-08-11 21:32:28.266356+03:00)
+2025-08-11 21:32:28,272 - src.bot - INFO - ✅ Бот запущен.
+2025-08-11 21:32:28,273 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_win_notification_task (trigger: interval[4:00:00], next run at: 2025-08-12 01:32:28 MSK)" (scheduled at 2025-08-11 21:32:28.267496+03:00)
+2025-08-11 21:32:28,273 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_motivational_task (trigger: interval[10:00:00], next run at: 2025-08-12 07:32:28 MSK)" (scheduled at 2025-08-11 21:32:28.267942+03:00)
+2025-08-11 21:32:28,277 - src.scheduler - INFO - Нет зарегистрированных пользователей для отправки уведомлений о выигрышах
+2025-08-11 21:32:28,278 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_win_notification_task (trigger: interval[4:00:00], next run at: 2025-08-12 01:32:28 MSK)" executed successfully
+2025-08-11 21:32:28,284 - src.scheduler - INFO - Нет пользователей с включенными авто-сигналами
+2025-08-11 21:32:28,286 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[1:06:00], next run at: 2025-08-11 22:38:28 MSK)" executed successfully
+2025-08-11 21:32:28,294 - src.scheduler - INFO - Нет пользователей с авто-сигналами для мотивационных сообщений
+2025-08-11 21:32:28,295 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_motivational_task (trigger: interval[10:00:00], next run at: 2025-08-12 07:32:28 MSK)" executed successfully
+2025-08-11 21:32:30,496 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-11 21:32:30,536 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-11 21:32:30,537 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-11 21:32:30,537 - telegram.ext.Application - INFO - Application started
+2025-08-11 21:32:40,304 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:32:40,306 - src.bot - INFO - Команда /start от пользователя 578529330
+2025-08-11 21:32:40,312 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-11 21:32:40,675 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-11 21:32:42,587 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:32:42,632 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-11 21:32:42,633 - src.bot - INFO - Callback query от пользователя 578529330: casino_done
+2025-08-11 21:32:42,680 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-11 21:32:42,769 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-11 21:32:44,125 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:32:44,172 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-11 21:32:44,174 - src.bot - INFO - Callback query от пользователя 578529330: go_to_bot
+2025-08-11 21:32:44,226 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-11 21:32:44,474 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-11 21:32:54,162 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:33:00,014 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:33:00,017 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🔔 Авто-сигналы'
+2025-08-11 21:33:00,189 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:33:10,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:33:20,104 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:33:30,141 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:33:40,178 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:33:50,214 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:34:00,246 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:34:10,284 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:34:16,813 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:34:16,816 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-11 21:34:16,817 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-11 21:34:16,828 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-11 21:34:16,831 - __main__ - INFO - Завершение работы бота
+2025-08-11 21:34:19,062 - __main__ - INFO - Проверка конфигурации...
+2025-08-11 21:34:19,062 - __main__ - INFO - Инициализация базы данных...
+2025-08-11 21:34:19,065 - src.database - INFO - База данных инициализирована успешно
+2025-08-11 21:34:19,066 - __main__ - INFO - Запуск бота...
+2025-08-11 21:34:20,002 - src.bot - WARNING - Файл изображения не найден: bonus.png
+2025-08-11 21:34:20,002 - src.bot - WARNING - Файл изображения не найден: welcome.png
+2025-08-11 21:34:20,006 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-11 21:34:20,007 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-11 21:34:20,007 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-11 21:34:20,008 - src.scheduler - INFO - Планировщик настроен с интервалом 1 минут для авто-сигналов
+2025-08-11 21:34:20,008 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-11 21:34:20,009 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-11 21:34:20,010 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-11 21:34:20,010 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-11 21:34:20,010 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-11 21:34:20,011 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-11 21:34:20,012 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:35:20 MSK)" (scheduled at 2025-08-11 21:34:20.006064+03:00)
+2025-08-11 21:34:20,012 - src.bot - INFO - ✅ Бот запущен.
+2025-08-11 21:34:20,013 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_win_notification_task (trigger: interval[6:00:00], next run at: 2025-08-12 03:34:20 MSK)" (scheduled at 2025-08-11 21:34:20.007218+03:00)
+2025-08-11 21:34:20,014 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_motivational_task (trigger: interval[11:00:00], next run at: 2025-08-12 08:34:20 MSK)" (scheduled at 2025-08-11 21:34:20.007679+03:00)
+2025-08-11 21:34:20,017 - src.scheduler - INFO - Отправляем авто-сигналы 1 пользователям
+2025-08-11 21:34:20,017 - src.scheduler - INFO - Отправляем уведомления о выигрышах 1 пользователям
+2025-08-11 21:34:20,025 - src.scheduler - INFO - Отправляем мотивационные сообщения 1 пользователям
+2025-08-11 21:34:20,031 - src.signal_generator - INFO - Сгенерирован новый сигнал для пользователя 578529330. Следующее обновление: 2025-08-11 18:58:20.017629
+2025-08-11 21:34:20,173 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:34:20,174 - src.scheduler - INFO - Авто-сигнал отправлен пользователю 578529330
+2025-08-11 21:34:20,195 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:34:20,196 - src.scheduler - INFO - Мотивационное сообщение отправлено пользователю 578529330
+2025-08-11 21:34:20,218 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:34:20,219 - src.scheduler - INFO - Уведомление о выигрыше отправлено пользователю 578529330
+2025-08-11 21:34:20,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-11 21:34:20,236 - telegram.ext.Updater - WARNING - Failed bootstrap phase; try=1 max_retries=-1
+2025-08-11 21:34:20,676 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:35:20 MSK)" executed successfully
+2025-08-11 21:34:21,742 - telegram.ext.Updater - WARNING - Failed bootstrap phase; try=2 max_retries=-1
+2025-08-11 21:34:23,997 - telegram.ext.Updater - WARNING - Failed bootstrap phase; try=3 max_retries=-1
+2025-08-11 21:34:25,002 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_motivational_task (trigger: interval[11:00:00], next run at: 2025-08-12 08:34:20 MSK)" executed successfully
+2025-08-11 21:34:27,493 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-11 21:34:27,495 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-11 21:34:27,495 - telegram.ext.Application - INFO - Application started
+2025-08-11 21:34:32,694 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:34:32,697 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🔔 Авто-сигналы'
+2025-08-11 21:34:32,975 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:34:34,753 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:34:34,754 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🔔 Авто-сигналы'
+2025-08-11 21:34:34,848 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:34:40,237 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:34:40,238 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-11 21:34:40,370 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:34:45,151 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:34:45,152 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-11 21:34:45,152 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-11 21:34:45,174 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-11 21:34:45,175 - __main__ - INFO - Завершение работы бота
+2025-08-11 21:35:20,017 - apscheduler.scheduler - ERROR - Error submitting job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:35:20 MSK)" to executor "default"
+Traceback (most recent call last):
+  File "C:\Users\maksi\AppData\Local\Programs\Python\Python313\Lib\site-packages\apscheduler\schedulers\base.py", line 988, in _process_jobs
+    executor.submit_job(job, run_times)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\maksi\AppData\Local\Programs\Python\Python313\Lib\site-packages\apscheduler\executors\base.py", line 71, in submit_job
+    self._do_submit_job(job, run_times)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\maksi\AppData\Local\Programs\Python\Python313\Lib\site-packages\apscheduler\executors\pool.py", line 28, in _do_submit_job
+    f = self._pool.submit(run_job, job, job._jobstore_alias, run_times, self._logger.name)
+  File "C:\Users\maksi\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 171, in submit
+    raise RuntimeError('cannot schedule new futures after shutdown')
+RuntimeError: cannot schedule new futures after shutdown
+2025-08-11 21:36:20,010 - apscheduler.scheduler - ERROR - Error submitting job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:36:20 MSK)" to executor "default"
+Traceback (most recent call last):
+  File "C:\Users\maksi\AppData\Local\Programs\Python\Python313\Lib\site-packages\apscheduler\schedulers\base.py", line 988, in _process_jobs
+    executor.submit_job(job, run_times)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\maksi\AppData\Local\Programs\Python\Python313\Lib\site-packages\apscheduler\executors\base.py", line 71, in submit_job
+    self._do_submit_job(job, run_times)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\maksi\AppData\Local\Programs\Python\Python313\Lib\site-packages\apscheduler\executors\pool.py", line 28, in _do_submit_job
+    f = self._pool.submit(run_job, job, job._jobstore_alias, run_times, self._logger.name)
+  File "C:\Users\maksi\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 171, in submit
+    raise RuntimeError('cannot schedule new futures after shutdown')
+RuntimeError: cannot schedule new futures after shutdown
+2025-08-11 21:36:31,465 - __main__ - INFO - Проверка конфигурации...
+2025-08-11 21:36:31,465 - __main__ - INFO - Инициализация базы данных...
+2025-08-11 21:36:31,476 - src.database - INFO - База данных инициализирована успешно
+2025-08-11 21:36:31,476 - __main__ - INFO - Запуск бота...
+2025-08-11 21:36:32,418 - src.bot - WARNING - Файл изображения не найден: bonus.png
+2025-08-11 21:36:32,418 - src.bot - WARNING - Файл изображения не найден: welcome.png
+2025-08-11 21:36:32,422 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-11 21:36:32,422 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-11 21:36:32,423 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-08-11 21:36:32,423 - src.scheduler - INFO - Планировщик настроен с интервалом 1 минут для авто-сигналов
+2025-08-11 21:36:32,423 - src.scheduler - INFO - Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений
+2025-08-11 21:36:32,425 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_auto_signal_task" to job store "default"
+2025-08-11 21:36:32,425 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_win_notification_task" to job store "default"
+2025-08-11 21:36:32,426 - apscheduler.scheduler - INFO - Added job "AutoSignalScheduler._schedule_motivational_task" to job store "default"
+2025-08-11 21:36:32,426 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-11 21:36:32,427 - src.scheduler - INFO - Планировщик авто-сигналов запущен
+2025-08-11 21:36:32,427 - src.bot - INFO - ✅ Бот запущен.
+2025-08-11 21:36:32,613 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getMe "HTTP/1.1 200 OK"
+2025-08-11 21:36:32,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteWebhook "HTTP/1.1 200 OK"
+2025-08-11 21:36:32,652 - apscheduler.scheduler - INFO - Scheduler started
+2025-08-11 21:36:32,652 - telegram.ext.Application - INFO - Application started
+2025-08-11 21:36:41,264 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:36:41,265 - src.bot - INFO - Команда /start от пользователя 578529330
+2025-08-11 21:36:41,271 - src.database - INFO - Пользователь 578529330 добавлен в БД
+2025-08-11 21:36:41,562 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-11 21:36:43,043 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:36:43,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-11 21:36:43,166 - src.bot - INFO - Callback query от пользователя 578529330: casino_done
+2025-08-11 21:36:43,285 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-11 21:36:43,397 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-11 21:36:45,399 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:36:45,464 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-08-11 21:36:45,465 - src.bot - INFO - Callback query от пользователя 578529330: go_to_bot
+2025-08-11 21:36:45,524 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/deleteMessage "HTTP/1.1 200 OK"
+2025-08-11 21:36:45,711 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendPhoto "HTTP/1.1 200 OK"
+2025-08-11 21:36:47,716 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:36:47,718 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '🔔 Авто-сигналы'
+2025-08-11 21:36:47,781 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:36:57,763 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:37:07,802 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:37:17,840 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:37:27,876 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:37:32,425 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:38:32 MSK)" (scheduled at 2025-08-11 21:37:32.422442+03:00)
+2025-08-11 21:37:32,438 - src.scheduler - INFO - Отправляем авто-сигналы 1 пользователям
+2025-08-11 21:37:32,450 - src.signal_generator - INFO - Сгенерирован новый сигнал для пользователя 578529330. Следующее обновление: 2025-08-11 18:57:32.439559
+2025-08-11 21:37:32,639 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:37:32,642 - src.scheduler - INFO - Авто-сигнал отправлен пользователю 578529330
+2025-08-11 21:37:33,157 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:38:32 MSK)" executed successfully
+2025-08-11 21:37:37,910 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:37:44,153 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:37:44,154 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-11 21:37:44,160 - src.bot - ERROR - Ошибка при генерации сигнала для пользователя 578529330: Unknown error in HTTP implementation: RuntimeError('Event loop is closed')
+2025-08-11 21:37:44,324 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:37:47,048 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:37:47,049 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-11 21:37:47,164 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:37:57,094 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:38:07,131 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:38:17,168 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:38:27,206 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:38:32,436 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:39:32 MSK)" (scheduled at 2025-08-11 21:38:32.422442+03:00)
+2025-08-11 21:38:32,441 - src.scheduler - INFO - Отправляем авто-сигналы 1 пользователям
+2025-08-11 21:38:32,443 - src.signal_generator - INFO - Сигнал не генерируется для пользователя 578529330. Следующее обновление: 2025-08-11 18:57:32.439559
+2025-08-11 21:38:32,443 - src.scheduler - INFO - Сигнал не сгенерирован для пользователя 578529330
+2025-08-11 21:38:32,946 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:39:32 MSK)" executed successfully
+2025-08-11 21:38:37,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:38:47,274 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:38:57,312 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:39:07,349 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:39:17,384 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:39:27,419 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:39:32,429 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:40:32 MSK)" (scheduled at 2025-08-11 21:39:32.422442+03:00)
+2025-08-11 21:39:32,434 - src.scheduler - INFO - Отправляем авто-сигналы 1 пользователям
+2025-08-11 21:39:32,436 - src.signal_generator - INFO - Сигнал не генерируется для пользователя 578529330. Следующее обновление: 2025-08-11 18:57:32.439559
+2025-08-11 21:39:32,436 - src.scheduler - INFO - Сигнал не сгенерирован для пользователя 578529330
+2025-08-11 21:39:32,941 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:40:32 MSK)" executed successfully
+2025-08-11 21:39:37,455 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:39:47,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:39:57,526 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:40:07,564 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:40:17,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:40:27,631 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:40:32,427 - apscheduler.executors.default - INFO - Running job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:41:32 MSK)" (scheduled at 2025-08-11 21:40:32.422442+03:00)
+2025-08-11 21:40:32,434 - src.scheduler - INFO - Отправляем авто-сигналы 1 пользователям
+2025-08-11 21:40:32,436 - src.signal_generator - INFO - Сигнал не генерируется для пользователя 578529330. Следующее обновление: 2025-08-11 18:57:32.439559
+2025-08-11 21:40:32,437 - src.scheduler - INFO - Сигнал не сгенерирован для пользователя 578529330
+2025-08-11 21:40:32,941 - apscheduler.executors.default - INFO - Job "AutoSignalScheduler._schedule_auto_signal_task (trigger: interval[0:01:00], next run at: 2025-08-11 21:41:32 MSK)" executed successfully
+2025-08-11 21:40:37,668 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:40:40,198 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:40:40,199 - src.bot - INFO - Текстовое сообщение от пользователя 578529330: '⚡ Получить сигнал'
+2025-08-11 21:40:40,329 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/sendMessage "HTTP/1.1 200 OK"
+2025-08-11 21:40:50,241 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:41:00,277 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:41:10,316 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:41:18,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30/getUpdates "HTTP/1.1 200 OK"
+2025-08-11 21:41:18,654 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-08-11 21:41:18,655 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-08-11 21:41:18,677 - telegram.ext.Application - INFO - Application.stop() complete
+2025-08-11 21:41:18,678 - __main__ - INFO - Завершение работы бота
