@@ -61,10 +61,6 @@ def main():
         logger.info("Запуск бота...")
         bot = GamblingBot()
         
-        # Запуск планировщика авто-сигналов
-        scheduler = AutoSignalScheduler(bot.app)
-        scheduler.start()
-        
         # Запуск бота
         bot.run()
         

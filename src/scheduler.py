@@ -33,6 +33,7 @@ class AutoSignalScheduler:
         """
         self.app = app
         self.scheduler = BackgroundScheduler()
+        self.loop: asyncio.AbstractEventLoop | None = None
         self._setup_job()
     
     def _setup_job(self):
@@ -71,8 +72,13 @@ class AutoSignalScheduler:
         logger.info(f"Планировщик настроен с интервалом {interval} минут для авто-сигналов")
         logger.info("Добавлены задачи для уведомлений о выигрышах и мотивационных сообщений")
     
-    def start(self):
-        """Запуск планировщика."""
+    def start(self, loop: asyncio.AbstractEventLoop | None = None):
+        """Запуск планировщика.
+        Args:
+            loop: Запущенный event loop приложения, в который будут отправляться корутины
+        """
+        if loop is not None:
+            self.loop = loop
         self.scheduler.start()
         logger.info("Планировщик авто-сигналов запущен")
     
@@ -87,18 +93,11 @@ class AutoSignalScheduler:
         Безопасно выполняет авто-сигналы в основном event loop.
         """
         try:
-            # Создаем новый event loop для выполнения асинхронной задачи
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-            try:
-                loop.run_until_complete(self._auto_signal())
-            except Exception as loop_error:
-                logger.error(f"Ошибка в event loop: {loop_error}")
-            finally:
-                try:
-                    loop.close()
-                except Exception as close_error:
-                    logger.error(f"Ошибка при закрытии event loop: {close_error}")
+            running_loop = self.loop
+            if running_loop and running_loop.is_running():
+                asyncio.run_coroutine_threadsafe(self._auto_signal(), running_loop)
+            else:
+                logger.warning("Основной event loop приложения еще не запущен. Задача авто-сигнала пропущена.")
         except Exception as e:
             logger.error(f"Ошибка в schedule_auto_signal_task: {e}")
     
@@ -148,17 +147,11 @@ class AutoSignalScheduler:
         Безопасно выполняет отправку уведомлений в основном event loop.
         """
         try:
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-            try:
-                loop.run_until_complete(self._send_win_notifications())
-            except Exception as loop_error:
-                logger.error(f"Ошибка в event loop для уведомлений о выигрышах: {loop_error}")
-            finally:
-                try:
-                    loop.close()
-                except Exception as close_error:
-                    logger.error(f"Ошибка при закрытии event loop: {close_error}")
+            running_loop = self.loop
+            if running_loop and running_loop.is_running():
+                asyncio.run_coroutine_threadsafe(self._send_win_notifications(), running_loop)
+            else:
+                logger.warning("Основной event loop приложения еще не запущен. Задача уведомлений о выигрышах пропущена.")
         except Exception as e:
             logger.error(f"Ошибка в schedule_win_notification_task: {e}")
     
@@ -168,17 +161,11 @@ class AutoSignalScheduler:
         Безопасно выполняет отправку мотивационных сообщений в основном event loop.
         """
         try:
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-            try:
-                loop.run_until_complete(self._send_motivational_messages())
-            except Exception as loop_error:
-                logger.error(f"Ошибка в event loop для мотивационных сообщений: {loop_error}")
-            finally:
-                try:
-                    loop.close()
-                except Exception as close_error:
-                    logger.error(f"Ошибка при закрытии event loop: {close_error}")
+            running_loop = self.loop
+            if running_loop and running_loop.is_running():
+                asyncio.run_coroutine_threadsafe(self._send_motivational_messages(), running_loop)
+            else:
+                logger.warning("Основной event loop приложения еще не запущен. Задача мотивационных сообщений пропущена.")
         except Exception as e:
             logger.error(f"Ошибка в schedule_motivational_task: {e}")
     

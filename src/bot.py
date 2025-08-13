@@ -18,6 +18,7 @@ from .database import DatabaseManager
 from .signal_generator import SignalGenerator
 from .keyboards import KeyboardFactory
 from .messages import MessageTemplates
+from .scheduler import AutoSignalScheduler
 
 # Настройка логирования
 logging.basicConfig(
@@ -36,10 +37,20 @@ class GamblingBot:
         if not self._validate_token():
             raise ValueError("Неверный токен бота")
         
-        self.app = Application.builder().token(BotConfig.TOKEN).build()
+        self.app = Application.builder().token(BotConfig.TOKEN).post_init(self._post_init).build()
         self._setup_handlers()
         self._setup_error_handlers()
         self._check_resources()
+        self.scheduler: Optional[AutoSignalScheduler] = None
+
+    async def _post_init(self, app: Application) -> None:
+        """Хук инициализации PTB: стартуем планировщик, когда запущен event loop."""
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            loop = None
+        self.scheduler = AutoSignalScheduler(self.app)
+        self.scheduler.start(loop)
     
     def _validate_token(self) -> bool:
         """Проверяет валидность токена бота."""
