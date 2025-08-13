@@ -136,7 +136,7 @@ class GamblingBot:
         # Получаем данные пользователя
         db_user = DatabaseManager.get_user(user.id)
         
-        if not db_user or not db_user[2]:  # Не зарегистрирован
+        if not db_user or not db_user["registered"]:  # Не зарегистрирован
             # Отправляем картинку с сообщением о регистрации
             try:
                 with open(ImagesConfig.REGISTRATION_IMAGE, 'rb') as photo:
@@ -154,7 +154,23 @@ class GamblingBot:
                     parse_mode="Markdown"
                 )
         else:
-            await self._show_main_menu(update, context, db_user[3])
+            # Проверяем депозит
+            deposited = bool(db_user["deposited"]) if "deposited" in db_user.keys() else False
+            if not deposited:
+                try:
+                    with open(ImagesConfig.DEPOSIT_IMAGE, 'rb') as photo:
+                        await update.message.reply_photo(
+                            photo=photo,
+                            caption=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                            reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                        )
+                except FileNotFoundError:
+                    await update.message.reply_text(
+                        MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                        reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                    )
+                return
+            await self._show_main_menu(update, context, bool(db_user["auto_signal"]))
     
     async def _menu_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Обработчик команды /menu."""
@@ -168,7 +184,7 @@ class GamblingBot:
         # Получаем данные пользователя
         db_user = DatabaseManager.get_user(user_id)
         
-        if not db_user or not db_user[2]:  # Не зарегистрирован
+        if not db_user or not db_user["registered"]:  # Не зарегистрирован
             # Отправляем картинку с сообщением о необходимости регистрации
             try:
                 with open(ImagesConfig.REGISTRATION_IMAGE, 'rb') as photo:
@@ -186,7 +202,26 @@ class GamblingBot:
                     reply_markup=KeyboardFactory.registration_inline_keyboard(LinksConfig.BONUS_LINK)
                 )
         else:
-            await self._show_main_menu(update, context, db_user[3])
+            # Проверка депозита
+            deposited = bool(db_user["deposited"]) if "deposited" in db_user.keys() else False
+            if not deposited:
+                try:
+                    with open(ImagesConfig.DEPOSIT_IMAGE, 'rb') as photo:
+                        await update.message.reply_photo(
+                            photo=photo,
+                            caption=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                            reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                        )
+                except FileNotFoundError:
+                    await update.message.reply_text(
+                        "❌ Для доступа к меню необходимо сначала сделать первый депозит."
+                    )
+                    await update.message.reply_text(
+                        MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                        reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                    )
+                return
+            await self._show_main_menu(update, context, bool(db_user["auto_signal"]))
     
     async def _signal_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Обработчик команды /signal."""
@@ -196,8 +231,24 @@ class GamblingBot:
         
         # Проверяем регистрацию
         db_user = DatabaseManager.get_user(user_id)
-        if not db_user or not db_user[2]:
+        if not db_user or not db_user["registered"]:
             await update.message.reply_text(MessageTemplates.error_messages()['not_registered'])
+            return
+        # Проверяем депозит
+        deposited = bool(db_user["deposited"]) if "deposited" in db_user.keys() else False
+        if not deposited:
+            try:
+                with open(ImagesConfig.DEPOSIT_IMAGE, 'rb') as photo:
+                    await update.message.reply_photo(
+                        photo=photo,
+                        caption=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                        reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                    )
+            except FileNotFoundError:
+                await update.message.reply_text(
+                    MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                    reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                )
             return
         
         await self._generate_signal_for_user(update, context, user_id)
@@ -210,12 +261,28 @@ class GamblingBot:
         
         # Проверяем регистрацию
         db_user = DatabaseManager.get_user(user_id)
-        if not db_user or not db_user[2]:
+        if not db_user or not db_user["registered"]:
             await update.message.reply_text(MessageTemplates.error_messages()['not_registered'])
+            return
+        # Проверяем депозит
+        deposited = bool(db_user["deposited"]) if "deposited" in db_user.keys() else False
+        if not deposited:
+            try:
+                with open(ImagesConfig.DEPOSIT_IMAGE, 'rb') as photo:
+                    await update.message.reply_photo(
+                        photo=photo,
+                        caption=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                        reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                    )
+            except FileNotFoundError:
+                await update.message.reply_text(
+                    MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                    reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                )
             return
         
         # Переключаем статус авто-сигналов
-        new_status = 0 if db_user[3] else 1
+        new_status = 0 if bool(db_user["auto_signal"]) else 1
         if DatabaseManager.update_user(user_id, "auto_signal", new_status):
             status_text = MessageTemplates.info_messages()['auto_enabled'] if new_status else MessageTemplates.info_messages()['auto_disabled']
             await update.message.reply_text(status_text)
@@ -230,11 +297,11 @@ class GamblingBot:
             
             # Получаем данные пользователя для показа главного меню
             db_user = DatabaseManager.get_user(user_id)
-            if db_user and db_user[2]:  # Если пользователь зарегистрирован
+            if db_user and db_user["registered"]:  # Если пользователь зарегистрирован
                 await update.message.reply_text(
                     MessageTemplates.help_detailed(), 
                     parse_mode="Markdown",
-                    reply_markup=KeyboardFactory.main_menu(db_user[3])
+                    reply_markup=KeyboardFactory.main_menu(bool(db_user["auto_signal"]))
                 )
             else:
                 # Если пользователь не зарегистрирован, показываем справку без меню
@@ -317,16 +384,40 @@ class GamblingBot:
             return
         
         # Проверяем регистрацию для всех функций
-        if not db_user[2]:
+        if not db_user["registered"]:
             await update.message.reply_text(
                 MessageTemplates.error_messages()['not_registered'],
                 reply_markup=KeyboardFactory.registration_inline_keyboard(LinksConfig.BONUS_LINK)
             )
             return
         
+        # Проверяем депозит для всех функций
+        try:
+            is_deposited = bool(db_user["deposited"]) if "deposited" in db_user.keys() else bool(db_user[9]) if len(db_user) > 9 else False
+        except Exception:
+            is_deposited = False
+        if not is_deposited:
+            await update.message.reply_text(
+                "❌ Для доступа к функциям бота необходимо сначала сделать первый депозит.",
+                reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+            )
+            try:
+                with open(ImagesConfig.DEPOSIT_IMAGE, 'rb') as photo:
+                    await update.message.reply_photo(
+                        photo=photo,
+                        caption=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                        reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                    )
+            except FileNotFoundError:
+                await update.message.reply_text(
+                    MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                    reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                )
+            return
+        
         # Обработка кнопки перехода в главное меню
         if text == "📋 Перейти в главное меню":
-            await self._show_main_menu(update, context, db_user[3])
+            await self._show_main_menu(update, context, bool(db_user["auto_signal"]))
             return
         
         # Обработка основных кнопок меню
@@ -334,19 +425,19 @@ class GamblingBot:
             await self._generate_signal_for_user(update, context, user_id)
         
         elif text == "🔔 Авто-сигналы":
-            new_status = 0 if db_user[3] else 1
+            new_status = 0 if bool(db_user["auto_signal"]) else 1
             if DatabaseManager.update_user(user_id, "auto_signal", new_status):
                 status_text = MessageTemplates.info_messages()['auto_enabled'] if new_status else MessageTemplates.info_messages()['auto_disabled']
-                await update.message.reply_text(status_text, reply_markup=KeyboardFactory.main_menu(new_status))
+                await update.message.reply_text(status_text, reply_markup=KeyboardFactory.main_menu(bool(new_status)))
             else:
-                await update.message.reply_text(MessageTemplates.error_messages()['settings_error'], reply_markup=KeyboardFactory.main_menu(db_user[3]))
+                await update.message.reply_text(MessageTemplates.error_messages()['settings_error'], reply_markup=KeyboardFactory.main_menu(bool(db_user["auto_signal"])))
         
         elif text == "🛟 Помощь":
             try:
-                await update.message.reply_text(MessageTemplates.help_detailed(), parse_mode="Markdown", reply_markup=KeyboardFactory.main_menu(db_user[3]))
+                await update.message.reply_text(MessageTemplates.help_detailed(), parse_mode="Markdown", reply_markup=KeyboardFactory.main_menu(bool(db_user["auto_signal"])))
             except Exception as e:
                 logger.error(f"Ошибка при показе помощи через кнопку: {e}")
-                await update.message.reply_text(MessageTemplates.error_messages()['help_error'], reply_markup=KeyboardFactory.main_menu(db_user[3]))
+                await update.message.reply_text(MessageTemplates.error_messages()['help_error'], reply_markup=KeyboardFactory.main_menu(bool(db_user["auto_signal"])))
         
         elif text == "👥 Сообщество":
             await update.message.reply_text(
@@ -360,7 +451,7 @@ class GamblingBot:
             logger.info(f"Неизвестная команда от пользователя {user_id}: '{text}'")
             await update.message.reply_text(
                 f"❓ Неизвестная команда: '{text}'. Используйте кнопки меню или команду /start для начала работы.",
-                reply_markup=KeyboardFactory.main_menu(db_user[3])
+                reply_markup=KeyboardFactory.main_menu(bool(db_user["auto_signal"]))
             )
     
     async def _handle_callback(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -379,6 +470,9 @@ class GamblingBot:
         if query.data == "casino_done":
             await self._handle_casino_done(query, context)
             return
+        if query.data == "deposit_done":
+            await self._handle_deposit_done(query, context)
+            return
         
         # Для остальных callback проверяем регистрацию
         db_user = DatabaseManager.get_user(user_id)
@@ -393,8 +487,44 @@ class GamblingBot:
         if query.data == "go_to_bot":
             await self._handle_go_to_bot(query, context, db_user)
         elif query.data == "gen_signal":
+            # Проверяем депозит перед генерацией сигнала
+            deposited = bool(db_user["deposited"]) if "deposited" in db_user.keys() else False
+            if not deposited:
+                try:
+                    with open(ImagesConfig.DEPOSIT_IMAGE, 'rb') as photo:
+                        await context.bot.send_photo(
+                            chat_id=query.message.chat_id,
+                            photo=photo,
+                            caption=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                            reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                        )
+                except FileNotFoundError:
+                    await context.bot.send_message(
+                        chat_id=query.message.chat_id,
+                        text=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                        reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                    )
+                return
             await self._generate_signal_for_user_callback(query, context, user_id)
         elif query.data == "toggle_auto_signal":
+            # Проверяем депозит перед переключением автосигналов
+            deposited = bool(db_user["deposited"]) if "deposited" in db_user.keys() else False
+            if not deposited:
+                try:
+                    with open(ImagesConfig.DEPOSIT_IMAGE, 'rb') as photo:
+                        await context.bot.send_photo(
+                            chat_id=query.message.chat_id,
+                            photo=photo,
+                            caption=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                            reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                        )
+                except FileNotFoundError:
+                    await context.bot.send_message(
+                        chat_id=query.message.chat_id,
+                        text=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                        reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
+                    )
+                return
             await self._handle_toggle_auto_signal(query, context, db_user)
         elif query.data == "help":
             await self._handle_help_callback(query, context)
@@ -402,33 +532,60 @@ class GamblingBot:
             await self._handle_community_callback(query, context)
     
     async def _handle_casino_done(self, query, context):
-        """Обработка завершения регистрации в казино."""
+        """Обработка завершения регистрации в казино: показываем шаг с депозитом."""
         user_id = query.from_user.id
         
         if DatabaseManager.update_user(user_id, "registered", 1):
             try:
                 await query.message.delete()
-                # Отправляем картинку с приглашением в группу
+                # Показываем окно с просьбой сделать первый депозит
                 try:
-                    with open(ImagesConfig.WELCOME_IMAGE, 'rb') as photo:
+                    with open(ImagesConfig.DEPOSIT_IMAGE, 'rb') as photo:
                         await context.bot.send_photo(
                             chat_id=query.message.chat_id,
                             photo=photo,
-                            caption=MessageTemplates.registration_success_detailed(LinksConfig.GROUP_LINK),
-                            reply_markup=KeyboardFactory.registration_success_keyboard(LinksConfig.GROUP_LINK),
-                            parse_mode="Markdown"
+                            caption=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                            reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
                         )
                 except FileNotFoundError:
-                    # Если картинка не найдена, отправляем только текст
                     await context.bot.send_message(
                         chat_id=query.message.chat_id,
-                        text=MessageTemplates.registration_success_detailed(LinksConfig.GROUP_LINK),
-                        reply_markup=KeyboardFactory.registration_success_keyboard(LinksConfig.GROUP_LINK)
+                        text=MessageTemplates.deposit_request(LinksConfig.DEPOSIT_LINK),
+                        reply_markup=KeyboardFactory.deposit_inline_keyboard(LinksConfig.DEPOSIT_LINK)
                     )
             except Exception as e:
-                logger.error(f"Ошибка при обработке завершения регистрации: {e}")
+                logger.error(f"Ошибка при показе шага депозита: {e}")
         else:
             await query.edit_message_text(MessageTemplates.error_messages()['registration_error'])
+
+    async def _handle_deposit_done(self, query, context):
+        """Обработка подтверждения первого депозита: показываем приглашение в группу."""
+        try:
+            # Обновляем статус депозита
+            try:
+                DatabaseManager.update_user(query.from_user.id, "deposited", 1)
+            except Exception as e:
+                logger.error(f"Не удалось обновить статус депозита: {e}")
+            await query.message.delete()
+            # Отправляем картинку с приглашением в группу
+            try:
+                with open(ImagesConfig.WELCOME_IMAGE, 'rb') as photo:
+                    await context.bot.send_photo(
+                        chat_id=query.message.chat_id,
+                        photo=photo,
+                        caption=MessageTemplates.registration_success_detailed(LinksConfig.GROUP_LINK),
+                        reply_markup=KeyboardFactory.registration_success_keyboard(LinksConfig.GROUP_LINK),
+                        parse_mode="Markdown"
+                    )
+            except FileNotFoundError:
+                # Если картинка не найдена, отправляем только текст
+                await context.bot.send_message(
+                    chat_id=query.message.chat_id,
+                    text=MessageTemplates.registration_success_detailed(LinksConfig.GROUP_LINK),
+                    reply_markup=KeyboardFactory.registration_success_keyboard(LinksConfig.GROUP_LINK)
+                )
+        except Exception as e:
+            logger.error(f"Ошибка при обработке подтверждения депозита: {e}")
     
     async def _handle_go_to_bot(self, query, context, db_user):
         """Обработка перехода к боту."""
@@ -438,7 +595,7 @@ class GamblingBot:
             updated_user = DatabaseManager.get_user(query.from_user.id)
             if updated_user:
                 fake_update = type('Update', (), {'effective_chat': type('Chat', (), {'id': query.message.chat_id})()})()
-                await self._show_main_menu(fake_update, context, updated_user[3])
+                await self._show_main_menu(fake_update, context, bool(updated_user["auto_signal"]))
             else:
                 await context.bot.send_message(
                     chat_id=query.message.chat_id,
@@ -505,7 +662,7 @@ class GamblingBot:
     async def _handle_toggle_auto_signal(self, query, context, db_user):
         """Переключение авто-сигналов."""
         user_id = query.from_user.id
-        new_status = 0 if db_user[3] else 1
+        new_status = 0 if bool(db_user["auto_signal"]) else 1
         
         if DatabaseManager.update_user(user_id, "auto_signal", new_status):
             try:
@@ -514,7 +671,7 @@ class GamblingBot:
                 await context.bot.send_message(
                     chat_id=query.message.chat_id,
                     text=status_text,
-                    reply_markup=KeyboardFactory.main_menu(new_status)
+                    reply_markup=KeyboardFactory.main_menu(bool(new_status))
                 )
             except Exception as e:
                 logger.error(f"Ошибка при переключении автосигналов: {e}")
@@ -528,12 +685,12 @@ class GamblingBot:
             # Получаем данные пользователя для показа главного меню
             user_id = query.from_user.id
             db_user = DatabaseManager.get_user(user_id)
-            if db_user and db_user[2]:  # Если пользователь зарегистрирован
+            if db_user and db_user["registered"]:  # Если пользователь зарегистрирован
                 await context.bot.send_message(
                     chat_id=query.message.chat_id,
                     text=MessageTemplates.help_detailed(),
                     parse_mode="Markdown",
-                    reply_markup=KeyboardFactory.main_menu(db_user[3])
+                    reply_markup=KeyboardFactory.main_menu(bool(db_user["auto_signal"]))
                 )
             else:
                 # Если пользователь не зарегистрирован, показываем справку без меню

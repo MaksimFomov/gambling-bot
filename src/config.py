@@ -30,7 +30,10 @@ class LinksConfig:
     """Конфигурация ссылок."""
     
     # Casino Bonus Link (ссылка на бонус казино)
-    BONUS_LINK: str = os.getenv("BONUS_LINK", "https://your-casino-link.com?ref=promo")
+    BONUS_LINK: str = os.getenv("BONUS_LINK", "https://1wvlau.life/v3/aggressive-casino?p=vacr")
+    
+    # Deposit Link (ссылка на пополнение/депозит)
+    DEPOSIT_LINK: str = os.getenv("DEPOSIT_LINK", "https://1wvlau.life/casino/list/4?p=km2a")
     
     # Telegram Group Link (ссылка на группу Telegram)
     GROUP_LINK: str = os.getenv("GROUP_LINK", "https://t.me/+MmF7VX1_WsU4ZTEy")
@@ -46,6 +49,7 @@ class ImagesConfig:
     WELCOME_IMAGE: str = os.path.join(IMAGES_DIR, os.getenv("WELCOME_IMAGE", "welcome.png"))
     REGISTRATION_IMAGE: str = os.path.join(IMAGES_DIR, os.getenv("REGISTRATION_IMAGE", "registration.png"))
     MAIN_MENU_IMAGE: str = os.path.join(IMAGES_DIR, os.getenv("MAIN_MENU_IMAGE", "main_menu.png"))
+    DEPOSIT_IMAGE: str = os.path.join(IMAGES_DIR, os.getenv("DEPOSIT_IMAGE", "registration.png"))
 
 
 class DatabaseConfig:
@@ -59,8 +63,8 @@ class SchedulerConfig:
     """Конфигурация планировщика."""
     
     # Signal Interval Settings (интервалы генерации сигналов в минутах)
-    MIN_SIGNAL_INTERVAL: int = int(os.getenv("MIN_SIGNAL_INTERVAL", "180"))
-    MAX_SIGNAL_INTERVAL: int = int(os.getenv("MAX_SIGNAL_INTERVAL", "360"))
+    MIN_SIGNAL_INTERVAL: int = int(os.getenv("MIN_SIGNAL_INTERVAL", "1"))
+    MAX_SIGNAL_INTERVAL: int = int(os.getenv("MAX_SIGNAL_INTERVAL", "1"))
     
     @classmethod
     def validate_intervals(cls) -> bool:

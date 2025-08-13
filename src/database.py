@@ -24,6 +24,8 @@ def get_db_connection():
     conn = None
     try:
         conn = sqlite3.connect(DatabaseConfig.DATABASE_PATH, timeout=30.0)
+        # Возвращаем строки в виде sqlite3.Row для доступа по имени колонки
+        conn.row_factory = sqlite3.Row
         # Включаем внешние ключи
         conn.execute("PRAGMA foreign_keys = ON")
         # Включаем WAL режим для лучшей производительности
@@ -74,6 +76,7 @@ class DatabaseManager:
                         user_id INTEGER PRIMARY KEY,
                         username TEXT,
                         registered INTEGER DEFAULT 0,
+                        deposited INTEGER DEFAULT 0,
                         auto_signal INTEGER DEFAULT 0,
                         joined_at TEXT,
                         last_signal_text TEXT,
@@ -85,10 +88,22 @@ class DatabaseManager:
                 
                 # Создаем индексы для улучшения производительности
                 cursor.execute("CREATE INDEX IF NOT EXISTS idx_users_registered ON users(registered)")
+                cursor.execute("CREATE INDEX IF NOT EXISTS idx_users_deposited ON users(deposited)")
                 cursor.execute("CREATE INDEX IF NOT EXISTS idx_users_auto_signal ON users(auto_signal)")
                 cursor.execute("CREATE INDEX IF NOT EXISTS idx_users_joined_at ON users(joined_at)")
                 
                 conn.commit()
+
+                # Миграция: добавляем колонку deposited, если её нет (для существующих БД)
+                try:
+                    cursor.execute("PRAGMA table_info(users)")
+                    columns = [row[1] for row in cursor.fetchall()]
+                    if 'deposited' not in columns:
+                        cursor.execute("ALTER TABLE users ADD COLUMN deposited INTEGER DEFAULT 0")
+                        conn.commit()
+                        logger.info("В таблицу users добавлена колонка 'deposited'")
+                except Exception as mig_e:
+                    logger.error(f"Ошибка миграции добавления 'deposited': {mig_e}")
             
             logger.info("База данных инициализирована успешно")
             return True

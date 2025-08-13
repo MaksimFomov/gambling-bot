@@ -92,6 +92,15 @@ class KeyboardFactory:
             [InlineKeyboardButton("🚀 Перейти к боту", callback_data="go_to_bot")]
         ]
         return InlineKeyboardMarkup(keyboard)
+
+    @staticmethod
+    def deposit_inline_keyboard(deposit_link: str) -> InlineKeyboardMarkup:
+        """Клавиатура для шага с первым депозитом."""
+        keyboard = [
+            [InlineKeyboardButton("💳 Сделать депозит", url=deposit_link)],
+            [InlineKeyboardButton("✅ Я сделал депозит", callback_data="deposit_done")]
+        ]
+        return InlineKeyboardMarkup(keyboard)
     
     @staticmethod
     def go_to_main_menu_keyboard() -> ReplyKeyboardMarkup:
