@@ -63,8 +63,8 @@ class SchedulerConfig:
     """Конфигурация планировщика."""
     
     # Signal Interval Settings (интервалы генерации сигналов в минутах)
-    MIN_SIGNAL_INTERVAL: int = int(os.getenv("MIN_SIGNAL_INTERVAL", "1"))
-    MAX_SIGNAL_INTERVAL: int = int(os.getenv("MAX_SIGNAL_INTERVAL", "1"))
+    MIN_SIGNAL_INTERVAL: int = int(os.getenv("MIN_SIGNAL_INTERVAL", "180"))
+    MAX_SIGNAL_INTERVAL: int = int(os.getenv("MAX_SIGNAL_INTERVAL", "360"))
     
     @classmethod
     def validate_intervals(cls) -> bool:
