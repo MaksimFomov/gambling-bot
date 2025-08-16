@@ -36,7 +36,7 @@ class LinksConfig:
     DEPOSIT_LINK: str = os.getenv("DEPOSIT_LINK", "https://1wvlau.life/casino/list/4?p=km2a")
     
     # Telegram Group Link (ссылка на группу Telegram)
-    GROUP_LINK: str = os.getenv("GROUP_LINK", "https://t.me/+MmF7VX1_WsU4ZTEy")
+    GROUP_LINK: str = os.getenv("GROUP_LINK", "https://t.me/+5evS9ewfsqhjMzRi")
 
 
 class ImagesConfig:
