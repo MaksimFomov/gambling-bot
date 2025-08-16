@@ -20,7 +20,7 @@ class BotConfig:
     """Конфигурация Telegram бота."""
     
     # Telegram Bot Token (строка)
-    TOKEN: str = os.getenv("BOT_TOKEN", "7790674836:AAH88tJkBUBTj5SsCduxZHVfrno-Gudpt30")
+    TOKEN: str = os.getenv("BOT_TOKEN", "8392806380:AAHrh6naN-vNOl5fBWTt-lmQorSW7uV1tlI")
     
     # Admin User ID (целое число)
     ADMIN_ID: int = int(os.getenv("ADMIN_ID", "578529330"))
